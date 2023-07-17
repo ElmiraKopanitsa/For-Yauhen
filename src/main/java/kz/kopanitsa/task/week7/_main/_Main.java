@@ -12,5 +12,10 @@ public class _Main {
         methodArr.printSumNumbers(arr);
         methodArr.printOddIndexNumbersSubtractionEvenIndexNumber(arr);
         methodArr.printCountZeroNumbers(arr);
+        int [] arr2 = new int[] {2, -3, 1, 1};
+        int [] arr3 = methodArr.bubbleSort(arr2);
+        for (int num : arr3) {
+            System.out.print(num);
+        }
     }
 }
