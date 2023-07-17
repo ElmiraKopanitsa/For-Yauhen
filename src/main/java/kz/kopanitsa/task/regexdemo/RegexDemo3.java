@@ -1,4 +1,4 @@
-package kz.kopanitsa.task.RegexDemo;
+package kz.kopanitsa.task.regexdemo;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

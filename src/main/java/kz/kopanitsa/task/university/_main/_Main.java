@@ -1,17 +1,17 @@
-package kz.kopanitsa.task.University._main;
+package kz.kopanitsa.task.university._main;
 
-import kz.kopanitsa.task.University.model.Student;
-import kz.kopanitsa.task.University.model.Teacher;
-import kz.kopanitsa.task.University.model.University;
+import kz.kopanitsa.task.university.model.Student;
+import kz.kopanitsa.task.university.model.Teacher;
+import kz.kopanitsa.task.university.model.University;
 
 public class _Main {
     public static void main(String[] args) {
         Student student1 = new Student();
         University university = new University();
         Teacher teacher = new Teacher();
-        student1.setStudent("Kopanitsa");
-        university.setUniversity("IT Girls");
-        teacher.setTeacher("Blinov");
+        student1.setName("Kopanitsa");
+        university.setName("IT Girls");
+        teacher.setName("Blinov");
         student1.setTeacher(teacher);
         student1.setStudentUniversity(university);
         teacher.setTeacherUniversity(university);
@@ -24,11 +24,5 @@ public class _Main {
         System.out.println(teacher.takeExam());
         System.out.println(teacher.talkLesson());
         System.out.println(teacher.eat());
-
-
     }
-
-
-
-
 }

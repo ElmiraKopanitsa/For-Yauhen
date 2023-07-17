@@ -1,15 +1,15 @@
-package kz.kopanitsa.task.University.model;
+package kz.kopanitsa.task.university.model;
 
 public class Student implements StudentInterface, UniversityInterface {
     private String name;
     private University university;
     private Teacher teacher;
 
-    public void setStudent(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getStudentName() {
+    public String getName() {
         return this.name;
     }
 
@@ -20,8 +20,9 @@ public class Student implements StudentInterface, UniversityInterface {
     public void setStudentUniversity(University name) {
         this.university = name;
     }
+
     public String getFullStudent() {
-        return "Я студент " + this.name + ", мой преподаватель - " +  teacher.getTeacherName() + " в " + university.getUniversity() + ".";
+        return "Я студент " + this.name + ", мой преподаватель - " +  teacher.getName() + " в " + university.getName() + ".";
     }
 
     @Override

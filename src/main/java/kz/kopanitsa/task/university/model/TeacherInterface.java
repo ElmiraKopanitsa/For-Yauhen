@@ -1,4 +1,4 @@
-package kz.kopanitsa.task.University.model;
+package kz.kopanitsa.task.university.model;
 
 public interface TeacherInterface {
     String talkLesson();
